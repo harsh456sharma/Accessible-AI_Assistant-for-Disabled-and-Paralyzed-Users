@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Flask instance folder and config
+instance/
+*.db
+*.sqlite3
+
+# Flask environment files
+.env
+*.env
+
+# Flask cache and session files
+*.log
+*.pid
+*.swp
+*.swo
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/editor configs
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints
+
+# MediaPipe and PyAutoGUI temp files
+mediapipe/
+screenshot*.png
+temp_*
+
+# SpeechRecognition temp audio
+*.wav
+*.aiff
+*.flac
+
+# Flask __pycache__ in subdirs
+**/__pycache__/
+
+# pycache inside app directories (Flask apps)
+*/__pycache__/
+
+# If using gunicorn or similar
+*.sock
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+test_*.log
+
+# Build/dist
+build/
+dist/
+*.egg-info/

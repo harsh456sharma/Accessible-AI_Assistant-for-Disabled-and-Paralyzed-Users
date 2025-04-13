@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tools</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Your AI Tools</h1>
+      <p>Choose your AI-powered feature below:</p>
+      <div class="btn-group">
+        <a href="/voice" class="cta-btn">🎤 Voice Typing</a>
+        <a href="/assistant" class="cta-btn secondary">🤖 AI Voice Assistant</a>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    <p>Made with ❤️ using Flask and Web Speech API</p>
+  </footer>
+</body>
+</html>

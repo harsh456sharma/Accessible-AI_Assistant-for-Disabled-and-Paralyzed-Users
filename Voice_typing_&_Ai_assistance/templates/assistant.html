@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Voice Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" />
+</head>
+
+<body>
+  <div class="hero-content" style="padding: 50px; text-align: center;">
+    <h2>🤖 AI Voice Assistant</h2>
+    <p>Click the button and speak. I will respond back!</p>
+    <!-- Start talking button -->
+    <button onclick="startListening()" class="cta-btn">🎙️ Start Talking</button>
+    <!-- Conversation display area -->
+    <div id="conversation"
+      style="margin-top: 30px; padding: 10px; background-color: #f9f9f9; border-radius: 10px; height: 300px; overflow-y: auto;">
+    </div>
+  </div>
+
+  <!-- Link to external JS file for handling voice interactions -->
+  <script src="{{ url_for('static', filename='assistant.js') }}"></script>
+</body>
+
+</html>
